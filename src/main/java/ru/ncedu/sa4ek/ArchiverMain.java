@@ -21,7 +21,7 @@ public class ArchiverMain {
                 System.out.println("Please, enter name and path to output zip-file.");
                 String output = reader.readLine();
                 System.out.println("Done: " +
-                        archiver.createArchive(files, output));
+                        archiver.createArchive(files,output));
             }
             else if(command.equals("unzip")){
                 ArchiverImpl archiver = new ArchiverImpl();

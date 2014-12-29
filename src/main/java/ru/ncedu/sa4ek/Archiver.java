@@ -10,7 +10,7 @@ public interface Archiver {
      * @param outputFileName name of output Zip-file
      * @return success or error
      */
-    public boolean createArchive(String pathToZip, String outputFileName);
+    public String createArchive(String pathToZip, String outputFileName);
 
     /***
      *  This method unpacks archive
@@ -18,5 +18,5 @@ public interface Archiver {
      * @param outputPath path to UnZip
      * @return success or error
      */
-    public boolean unpackArchive(String zipFileName, String outputPath);
+    public String unpackArchive(String zipFileName, String outputPath);
 }
